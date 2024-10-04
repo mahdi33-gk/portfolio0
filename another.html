@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html data-theme="light" lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!-- tailwing and daisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.11/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <!-- header -->
+     <header class="fixed z-50 w-full">
+        <div class="navbar flex  justify-between bg-blue-950 w-10/11">
+            <div class="">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h8m-8 6h16" />
+                  </svg>
+                </div>
+                <ul
+                  tabindex="0"
+                  class="menu menu-sm dropdown-content bg-blue-950 rounded-box z-[1] mt-3 w-52 p-2 shadow text-white">
+                  <li><a>Products</a></li>
+                  <li>
+                    <a>News</a>
+                  </li>
+                  <li><a>Menu</a></li>
+                  <li><a>About us</a></li>
+                </ul>
+              </div>
+              <a href="index.html" class=" btn btn-ghost text-2xl"><span class="text-white">Baking</span> <span class="text-yellow-500 -ml-2 font-serif">TOOL</span></a>
+            </div>
+            <div class=" hidden lg:flex">
+              <ul class="menu menu-horizontal px-1 text-white">
+                <li><a>Products</a></li>
+                  <li>
+                    <a>News</a>
+                  </li>
+                  <li><a>Menu</a></li>
+                  <li><a>About us</a></li>
+                
+              </ul>
+            </div>
+            <div class="">
+                <img src="https://icons8.com/icon/85080/shopping-cart" alt="">
+              <a class="border-2 px-3 py-2 border-white text-white rounded-3xl">Add us to your shop</a>
+            </div>
+        </div>
+     </header>
+
+     <section>
+        <div class="carousel w-full">
+            <div id="slide2" class="carousel-item relative w-full">
+              <img
+                src="https://img.daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.webp"
+                class="w-full" />
+              <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                <a href="#slide1" class="btn btn-circle">❮</a>
+                <a href="#slide3" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+            <div id="slide3" class="carousel-item relative w-full">
+              <img
+                src="https://img.daisyui.com/images/stock/photo-1414694762283-acccc27bca85.webp"
+                class="w-full" />
+              <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                <a href="#slide2" class="btn btn-circle">❮</a>
+                <a href="#slide4" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+            <div id="slide4" class="carousel-item relative w-full">
+              <img
+                src="https://img.daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.webp"
+                class="w-full" />
+              <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                <a href="#slide3" class="btn btn-circle">❮</a>
+                <a href="#slide1" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+          </div>
+     </section>
+
+     <!-- products -->
+      <section class="flex flex-row">
+        <div class="mx-auto px-auto shadow-2xl mt-3 ml-3 bg-slate-100 px-5 ">
+            <h1 class="text-blue-950 font-bold text-[40px]">Products</h1>
+            <h3 class="text-2xl text-black font-bold mb-3 mt-6">Filter1</h3>
+            <p class="mb-2">Showing 0 of 20</p>
+            <p class="mb-1">All</p>
+            <p class="mb-1">Category one</p>
+            <p class="mb-1">Category two</p>
+            <p class="mb-1">Category three</p>
+            
+
+            <h3 class="text-2xl text-black font-bold mb-3 mt-10">Filter2</h3>
+            <div class="form-control w-16">
+                <label class="cursor-pointer label">
+                  <input type="checkbox" checked="checked" class="checkbox checkbox-default" />
+                  <span class="label-text ml-1">Option1</span>
+                  
+                </label>
+            </div>
+            <div class="form-control w-16">
+                <label class="cursor-pointer label">
+                  <input type="checkbox" checked="checked" class="checkbox checkbox-default" />
+                  <span class="label-text ml-1">Option2</span>
+                  
+                </label>
+            </div>
+            <div class="form-control w-16">
+                <label class="cursor-pointer label">
+                  <input type="checkbox" checked="checked" class="checkbox checkbox-default" />
+                  <span class="label-text ml-1">Option3</span>
+                  
+                </label>
+            </div>
+            <div class="form-control w-16">
+                <label class="cursor-pointer label">
+                  <input type="checkbox" checked="checked" class="checkbox checkbox-default" />
+                  <span class="label-text ml-1">Option4</span>
+                  
+                </label>
+            </div>
+            <hr class="border-gray-600 border-3 w-32">
+
+            <div>
+                <h1 class="text-2xl text-black font-bold mt-10 mb-3">Filter3</h1>
+                <label class="form-control w-full max-w-xs">
+                    <div class="label">
+                    
+                      
+                    </div>
+                    <select class="select select-bordered">
+                      <option disabled selected>Pick one</option>
+                      <option>Star Wars</option>
+                      <option>Harry Potter</option>
+                      <option>Lord of the Rings</option>
+                      <option>Planet of the Apes</option>
+                      <option>Star Trek</option>
+                    </select>
+                    <div class="label">
+                      
+                      
+                    </div>
+                  </label>
+                  
+
+
+
+
+
+                  <div>
+                    <h1 class="text-2xl text-black font-bold mt-10">Filter4</h1>
+                    <input type="text" placeholder="Type here" class=" mt-3 input input-bordered w-full max-w-xs" />
+                  </div>
+  
+
+
+
+
+            </div>
+        </div>
+
+        <!-- cards -->
+        <div>
+            <section class="px-5">
+                <input type="text" placeholder="Type here" class="ml-5 mt-5 px-10 flex justify-center items-center input input-bordered w-full " />
+                <div class="flex flex-row flex-wrap gap-3 mt-10 justify-center items-center">
+                    <div class="card card-compact bg-base-100 w-52 shadow-xl">
+                        <figure>
+                          <img
+                            src="images/cake.jpg"
+                            alt="Shoes" />
+                        </figure>
+                        <div class="card-body">
+                          <h2 class=" text-center text-3xl">Cake</h2>
+                          <p>If a dog chews shoes whose shoes does he choose?</p>
+                          <div class="card-actions flex justify-center items-center">
+                            <button class="btn btn-primary">Buy Now</button>
+                          </div>
+                        </div>
+                    </div>
+        
+                    <div class="card card-compact bg-base-100 w-52 shadow-xl">
+                        <figure>
+                          <img
+                            src="images/cake.jpg"
+                            alt="Shoes" />
+                        </figure>
+                        <div class="card-body">
+                          <h2 class=" text-center text-3xl">Cake</h2>
+                          <p>If a dog chews shoes whose shoes does he choose?</p>
+                          <div class="card-actions flex justify-center items-center">
+                            <button class="btn btn-primary">Buy Now</button>
+                          </div>
+                        </div>
+                    </div>
+        
+                    <div class="card card-compact bg-base-100 w-52 shadow-xl">
+                        <figure>
+                          <img
+                            src="images/cake.jpg"
+                            alt="Shoes" />
+                        </figure>
+                        <div class="card-body">
+                          <h2 class=" text-center text-3xl">Cake</h2>
+                          <p>If a dog chews shoes whose shoes does he choose?</p>
+                          <div class="card-actions flex justify-center items-center">
+                            <button class="btn btn-primary">Buy Now</button>
+                          </div>
+                        </div>
+                    </div>
+        
+                    <div class="card card-compact bg-base-100 w-52 shadow-xl">
+                        <figure>
+                          <img
+                            src="images/cake.jpg"
+                            alt="Shoes" />
+                        </figure>
+                        <div class="card-body">
+                          <h2 class=" text-center text-3xl">Cake</h2>
+                          <p>If a dog chews shoes whose shoes does he choose?</p>
+                          <div class="card-actions flex justify-center items-center">
+                            <button class="btn btn-primary">Buy Now</button>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="card card-compact bg-base-100 w-52 shadow-xl">
+                        <figure>
+                          <img
+                            src="images/cake.jpg"
+                            alt="Shoes" />
+                        </figure>
+                        <div class="card-body">
+                          <h2 class=" text-center text-3xl">Cake</h2>
+                          <p>If a dog chews shoes whose shoes does he choose?</p>
+                          <div class="card-actions flex justify-center items-center">
+                            <button class="btn btn-primary">Buy Now</button>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="card card-compact bg-base-100 w-52 shadow-xl">
+                        <figure>
+                          <img
+                            src="images/cake.jpg"
+                            alt="Shoes" />
+                        </figure>
+                        <div class="card-body">
+                          <h2 class=" text-center text-3xl">Cake</h2>
+                          <p>If a dog chews shoes whose shoes does he choose?</p>
+                          <div class="card-actions flex justify-center items-center">
+                            <button class="btn btn-primary">Buy Now</button>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="card card-compact bg-base-100 w-52 shadow-xl">
+                        <figure>
+                          <img
+                            src="images/cake.jpg"
+                            alt="Shoes" />
+                        </figure>
+                        <div class="card-body">
+                          <h2 class=" text-center text-3xl">Cake</h2>
+                          <p>If a dog chews shoes whose shoes does he choose?</p>
+                          <div class="card-actions flex justify-center items-center">
+                            <button class="btn btn-primary">Buy Now</button>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="card card-compact bg-base-100 w-52 shadow-xl">
+                        <figure>
+                          <img
+                            src="images/cake.jpg"
+                            alt="Shoes" />
+                        </figure>
+                        <div class="card-body">
+                          <h2 class=" text-center text-3xl">Cake</h2>
+                          <p>If a dog chews shoes whose shoes does he choose?</p>
+                          <div class="card-actions flex justify-center items-center">
+                            <button class="btn btn-primary">Buy Now</button>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="card card-compact bg-base-100 w-52 shadow-xl">
+                        <figure>
+                          <img
+                            src="images/cake.jpg"
+                            alt="Shoes" />
+                        </figure>
+                        <div class="card-body">
+                          <h2 class=" text-center text-3xl">Cake</h2>
+                          <p>If a dog chews shoes whose shoes does he choose?</p>
+                          <div class="card-actions flex justify-center items-center">
+                            <button class="btn btn-primary">Buy Now</button>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="card card-compact bg-base-100 w-52 shadow-xl">
+                        <figure>
+                          <img
+                            src="images/cake.jpg"
+                            alt="Shoes" />
+                        </figure>
+                        <div class="card-body">
+                          <h2 class=" text-center text-3xl">Cake</h2>
+                          <p>If a dog chews shoes whose shoes does he choose?</p>
+                          <div class="card-actions flex justify-center items-center">
+                            <button class="btn btn-primary">Buy Now</button>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+               </section>
+        </div>
+      </section>
+
+
+
+
+<!-- footer -->
+     <footer>
+        <footer class="footer text-gray-300 mt-5 bg-blue-950 text-base-content p-10">
+            <aside>
+                <a class=" btn btn-ghost text-3xl"><span class="text-white">Baking</span> <span class="text-yellow-500 -ml-2 font-serif">TOOL</span></a>
+              <p>
+                ACME Industries Ltd.
+                <br />
+                Providing reliable tech since 1992
+              </p>
+            </aside>
+            <nav>
+              <h6 class="footer-title">Services</h6>
+              <a class="link link-hover">Branding</a>
+              <a class="link link-hover">Design</a>
+              <a class="link link-hover">Marketing</a>
+              <a class="link link-hover">Advertisement</a>
+            </nav>
+            <nav>
+              <h6 class="footer-title">Company</h6>
+              <a class="link link-hover">About us</a>
+              <a class="link link-hover">Contact</a>
+              <a class="link link-hover">Jobs</a>
+              <a class="link link-hover">Press kit</a>
+            </nav>
+            <nav>
+              <h6 class="footer-title">Legal</h6>
+              <a class="link link-hover">Terms of use</a>
+              <a class="link link-hover">Privacy policy</a>
+              <a class="link link-hover">Cookie policy</a>
+            </nav>
+          </footer>
+    </footer>
+</body>
+</html>
