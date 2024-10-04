@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html data-theme="light" lang="en" >
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,57 +9,282 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <div class="navbar bg-base-100">
-        <div class="navbar-start">
-          <div class="dropdown">
-            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor">
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 6h16M4 12h8m-8 6h16" />
-              </svg>
+    <!-- header -->
+     <header>
+        <div class="navbar flex  justify-between bg-blue-950 w-10/11">
+            <div class="">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h8m-8 6h16" />
+                  </svg>
+                </div>
+                <ul
+                  tabindex="0"
+                  class="menu menu-sm dropdown-content bg-blue-950 rounded-box z-[1] mt-3 w-52 p-2 shadow text-white">
+                  <li><a>Products</a></li>
+                  <li>
+                    <a>News</a>
+                  </li>
+                  <li><a>Menu</a></li>
+                  <li><a>About us</a></li>
+                </ul>
+              </div>
+              <a class=" btn btn-ghost text-2xl"><span class="text-white">Baking</span> <span class="text-yellow-500 -ml-2 font-serif">TOOL</span></a>
             </div>
-            <ul
-              tabindex="0"
-              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-              <li><a>Item 1</a></li>
-              <li>
-                <a>Parent</a>
-                <ul class="p-2">
-                  <li><a>Submenu 1</a></li>
-                  <li><a>Submenu 2</a></li>
-                </ul>
-              </li>
-              <li><a>Item 3</a></li>
-            </ul>
+            <div class=" hidden lg:flex">
+              <ul class="menu menu-horizontal px-1 text-white">
+                <li><a>Products</a></li>
+                  <li>
+                    <a>News</a>
+                  </li>
+                  <li><a>Menu</a></li>
+                  <li><a>About us</a></li>
+                
+              </ul>
+            </div>
+            <div class="">
+                <img src="https://icons8.com/icon/85080/shopping-cart" alt="">
+              <a class="border-2 px-3 py-2 border-white text-white rounded-3xl">Add us to your shop</a>
+            </div>
+        </div>
+     </header>
+
+     <section>
+        <div class="carousel w-full">
+            <div id="slide2" class="carousel-item relative w-full">
+              <img
+                src="https://img.daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.webp"
+                class="w-full" />
+              <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                <a href="#slide1" class="btn btn-circle">❮</a>
+                <a href="#slide3" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+            <div id="slide3" class="carousel-item relative w-full">
+              <img
+                src="https://img.daisyui.com/images/stock/photo-1414694762283-acccc27bca85.webp"
+                class="w-full" />
+              <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                <a href="#slide2" class="btn btn-circle">❮</a>
+                <a href="#slide4" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+            <div id="slide4" class="carousel-item relative w-full">
+              <img
+                src="https://img.daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.webp"
+                class="w-full" />
+              <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                <a href="#slide3" class="btn btn-circle">❮</a>
+                <a href="#slide1" class="btn btn-circle">❯</a>
+              </div>
+            </div>
           </div>
-          <a class="btn btn-ghost text-xl">daisyUI</a>
+     </section>
+
+     <!-- product and recipes -->
+      <section>
+        <div>
+            <h1 class="text-center text-[40px] mt-4 font-bold text-blue-950">Products And Recipes</h1>
         </div>
-        <div class="navbar-center hidden lg:flex">
-          <ul class="menu menu-horizontal px-1">
-            <li><a>Item 1</a></li>
-            <li>
-              <details>
-                <summary>Parent</summary>
-                <ul class="p-2">
-                  <li><a>Submenu 1</a></li>
-                  <li><a>Submenu 2</a></li>
-                </ul>
-              </details>
-            </li>
-            <li><a>Item 3</a></li>
-          </ul>
+        <div class="flex items-center justify-center">
+            <button class="btn-primary rounded-3xl px-7 btn">View Products</button>
+            <button class="ml-3 rounded-3xl btn px-7 btn-default">View Recipes</button>
         </div>
-        <div class="navbar-end">
-          <a class="btn">Button</a>
+      </section>
+
+      <!-- cards -->
+       <section>
+        <div class="flex flex-row flex-wrap gap-3 mt-10 justify-center items-center">
+            <div class="card card-compact bg-base-100 w-52 shadow-xl">
+                <figure>
+                  <img
+                    src="images/cake.jpg"
+                    alt="Shoes" />
+                </figure>
+                <div class="card-body">
+                  <h2 class=" text-center text-3xl">Cake</h2>
+                  <p>If a dog chews shoes whose shoes does he choose?</p>
+                  <div class="card-actions flex justify-center items-center">
+                    <button class="btn btn-primary">Buy Now</button>
+                  </div>
+                </div>
+            </div>
+
+            <div class="card card-compact bg-base-100 w-52 shadow-xl">
+                <figure>
+                  <img
+                    src="images/cake.jpg"
+                    alt="Shoes" />
+                </figure>
+                <div class="card-body">
+                  <h2 class=" text-center text-3xl">Cake</h2>
+                  <p>If a dog chews shoes whose shoes does he choose?</p>
+                  <div class="card-actions flex justify-center items-center">
+                    <button class="btn btn-primary">Buy Now</button>
+                  </div>
+                </div>
+            </div>
+
+            <div class="card card-compact bg-base-100 w-52 shadow-xl">
+                <figure>
+                  <img
+                    src="images/cake.jpg"
+                    alt="Shoes" />
+                </figure>
+                <div class="card-body">
+                  <h2 class=" text-center text-3xl">Cake</h2>
+                  <p>If a dog chews shoes whose shoes does he choose?</p>
+                  <div class="card-actions flex justify-center items-center">
+                    <button class="btn btn-primary">Buy Now</button>
+                  </div>
+                </div>
+            </div>
+
+            <div class="card card-compact bg-base-100 w-52 shadow-xl">
+                <figure>
+                  <img
+                    src="images/cake.jpg"
+                    alt="Shoes" />
+                </figure>
+                <div class="card-body">
+                  <h2 class=" text-center text-3xl">Cake</h2>
+                  <p>If a dog chews shoes whose shoes does he choose?</p>
+                  <div class="card-actions flex justify-center items-center">
+                    <button class="btn btn-primary">Buy Now</button>
+                  </div>
+                </div>
+            </div>
+            <div class="card card-compact bg-base-100 w-52 shadow-xl">
+                <figure>
+                  <img
+                    src="images/cake.jpg"
+                    alt="Shoes" />
+                </figure>
+                <div class="card-body">
+                  <h2 class=" text-center text-3xl">Cake</h2>
+                  <p>If a dog chews shoes whose shoes does he choose?</p>
+                  <div class="card-actions flex justify-center items-center">
+                    <button class="btn btn-primary">Buy Now</button>
+                  </div>
+                </div>
+            </div>
+            <div class="card card-compact bg-base-100 w-52 shadow-xl">
+                <figure>
+                  <img
+                    src="images/cake.jpg"
+                    alt="Shoes" />
+                </figure>
+                <div class="card-body">
+                  <h2 class=" text-center text-3xl">Cake</h2>
+                  <p>If a dog chews shoes whose shoes does he choose?</p>
+                  <div class="card-actions flex justify-center items-center">
+                    <button class="btn btn-primary">Buy Now</button>
+                  </div>
+                </div>
+            </div>
+            <div class="card card-compact bg-base-100 w-52 shadow-xl">
+                <figure>
+                  <img
+                    src="images/cake.jpg"
+                    alt="Shoes" />
+                </figure>
+                <div class="card-body">
+                  <h2 class=" text-center text-3xl">Cake</h2>
+                  <p>If a dog chews shoes whose shoes does he choose?</p>
+                  <div class="card-actions flex justify-center items-center">
+                    <button class="btn btn-primary">Buy Now</button>
+                  </div>
+                </div>
+            </div>
+            <div class="card card-compact bg-base-100 w-52 shadow-xl">
+                <figure>
+                  <img
+                    src="images/cake.jpg"
+                    alt="Shoes" />
+                </figure>
+                <div class="card-body">
+                  <h2 class=" text-center text-3xl">Cake</h2>
+                  <p>If a dog chews shoes whose shoes does he choose?</p>
+                  <div class="card-actions flex justify-center items-center">
+                    <button class="btn btn-primary">Buy Now</button>
+                  </div>
+                </div>
+            </div>
+            <div class="card card-compact bg-base-100 w-52 shadow-xl">
+                <figure>
+                  <img
+                    src="images/cake.jpg"
+                    alt="Shoes" />
+                </figure>
+                <div class="card-body">
+                  <h2 class=" text-center text-3xl">Cake</h2>
+                  <p>If a dog chews shoes whose shoes does he choose?</p>
+                  <div class="card-actions flex justify-center items-center">
+                    <button class="btn btn-primary">Buy Now</button>
+                  </div>
+                </div>
+            </div>
+            <div class="card card-compact bg-base-100 w-52 shadow-xl">
+                <figure>
+                  <img
+                    src="images/cake.jpg"
+                    alt="Shoes" />
+                </figure>
+                <div class="card-body">
+                  <h2 class=" text-center text-3xl">Cake</h2>
+                  <p>If a dog chews shoes whose shoes does he choose?</p>
+                  <div class="card-actions flex justify-center items-center">
+                    <button class="btn btn-primary">Buy Now</button>
+                  </div>
+                </div>
+            </div>
         </div>
-      </div>
+       </section>
+
+
+
+       <!-- footer -->
+        <footer>
+            <footer class="footer text-gray-300 mt-5 bg-blue-950 text-base-content p-10">
+                <aside>
+                    <a class=" btn btn-ghost text-3xl"><span class="text-white">Baking</span> <span class="text-yellow-500 -ml-2 font-serif">TOOL</span></a>
+                  <p>
+                    ACME Industries Ltd.
+                    <br />
+                    Providing reliable tech since 1992
+                  </p>
+                </aside>
+                <nav>
+                  <h6 class="footer-title">Services</h6>
+                  <a class="link link-hover">Branding</a>
+                  <a class="link link-hover">Design</a>
+                  <a class="link link-hover">Marketing</a>
+                  <a class="link link-hover">Advertisement</a>
+                </nav>
+                <nav>
+                  <h6 class="footer-title">Company</h6>
+                  <a class="link link-hover">About us</a>
+                  <a class="link link-hover">Contact</a>
+                  <a class="link link-hover">Jobs</a>
+                  <a class="link link-hover">Press kit</a>
+                </nav>
+                <nav>
+                  <h6 class="footer-title">Legal</h6>
+                  <a class="link link-hover">Terms of use</a>
+                  <a class="link link-hover">Privacy policy</a>
+                  <a class="link link-hover">Cookie policy</a>
+                </nav>
+              </footer>
+        </footer>
 </body>
 </html>
