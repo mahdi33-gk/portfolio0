@@ -7,26 +7,16 @@
     <!-- tailwing and daisyUI -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.11/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/288dc013f9.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body class="">
     <!-- header -->
      <header class="fixed z-50 w-full">
         <div class="navbar flex  justify-between bg-blue-950 w-10/11">
             <div class="">
               <div class="dropdown">
                 <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-5 w-5"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor">
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M4 6h16M4 12h8m-8 6h16" />
-                  </svg>
+                    <i class="text-white fa-solid fa-bars"></i>
                 </div>
                 <ul
                   tabindex="0"
@@ -53,8 +43,10 @@
               </ul>
             </div>
             <div class="">
+                <p class="md:hidden text-white mr-5 "><i class="fa-solid fa-cart-shopping"></i></p>
+                <p class="md:hidden text-white mr-2"><i class="fa-regular fa-bell"></i></p>
                 <img src="https://icons8.com/icon/85080/shopping-cart" alt="">
-              <a class="border-2 px-3 py-2 border-white text-white rounded-3xl">Add us to your shop</a>
+              <a class="hidden md:flex border-2 px-3 py-2 border-white text-white rounded-3xl">Add us to your shop</a>
             </div>
         </div>
      </header>
@@ -92,7 +84,7 @@
      </section>
 
      <!-- products -->
-      <section class="flex flex-row">
+      <section class="flex flex-row w-full">
         <div class="mx-auto px-auto shadow-2xl mt-3 ml-3 bg-slate-100 px-5 ">
             <h1 class="text-blue-950 font-bold text-[40px]">Products</h1>
             <h3 class="text-2xl text-black font-bold mb-3 mt-6">Filter1</h3>
@@ -320,7 +312,14 @@
                           </div>
                         </div>
                     </div>
+                    
                 </div>
+                <div class="join flex justify-center items-center mt-7">
+                    <button class="join-item btn btn-active">1</button>
+                    <button class="join-item btn ">2</button>
+                    <button class="join-item btn">3</button>
+                    <button class="join-item btn">4</button>
+                  </div>
                </section>
         </div>
       </section>
